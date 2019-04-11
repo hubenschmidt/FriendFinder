@@ -35,16 +35,16 @@
 
         <hr>
 
-        <!-- <h3><strong>Question 1</strong></h3>
-    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-    <select class="chosen-select" id="q1">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select> -->
+        <h3><strong>Question 1</strong></h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
         <!-- Question Card -->
         <div class="card mt-4">
@@ -53,10 +53,6 @@
             </div>
             <div class="card-body">
                 <div id="questionList"></div>
-
-                <!-- <ul id="questionList" class="list-group">
-                </ul>
-                <ul id="answerList" class="list-group"></ul> -->
             </div>
         </div>
 
@@ -106,36 +102,49 @@
 
         var card = $('#questionList')
         console.log(card)
-      
-         var answers = [];
 
-            function runQuestionQuery() {
-                $.ajax({ url: '/api/questions', method: 'GET' }).then(function (questionArray) {
-                    for (var i = 0; i < questionArray[0].length; i++) {
-    
-                        card.append(
-                            $("<h2>").text("Question #" + (i + 1)),
-                            $("<hr>"),
-                            $("<h2>").text(questionArray[0][i]),
-                        )
-                        
+        var answers = [];
 
-                        for (var j = 0; j < questionArray[1].length; j++) {
-                            card.append("<input type='radio' name='question-" + i +
-                                "' value='" + questionArray[1][j] + "''>" 
-                                + questionArray[1][j] + ' '
-                                );
-                                console.log()
-                        }
-                 
+        function runQuestionQuery() {
+            $.ajax({ url: '/api/questions', method: 'GET' }).then(function (questionArray) {
+                for (var i = 0; i < questionArray[0].length; i++) {
+
+                    card.append(
+                        $("<hr>"),
+                        $("<h3>").text("Question #" + (i + 1)),
+                        $("<h4>").text(questionArray[0][i]),
+                            "<select class='chosen-select' id='q" + parseInt(i+1) + "'>"
+                    )
+
+                    for (var j = 0; j < questionArray[1].length; j++) {
+
+
+
+                        // card.append("<select class='chosen-select' id='q" + i + "'>");
+
+                        // card.append("<select class='chosen-select' id='q" + i + "'><option value=''></option><option value='1'>1 (Strongly Disagree)</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5 (Strongly Agree)</option>"); 
+                            // if (j =)
+                            
+                            // card.append(if(j=1){
+                                
+                            // }
+                                
+                            // "<select class='chosen-select' id='q" + i + "'><option value=''></option><option value='1'>1 (Strongly Disagree)</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5 (Strongly Agree)</option>");      
+
+
+
+   
+                        // card.append("<input type='radio' name='question-" + i +
+                        //         "' value='" + questionArray[1][j] + "''>"
+                        //         + questionArray[1][j] + ' '
+                        //     );
+                        console.log()
                     }
-
-                })
-           
+                }
+            })
         }
 
         runQuestionQuery();
-    
 
         // Capture the form inputs
         $("#submit").on("click", function (event) {
