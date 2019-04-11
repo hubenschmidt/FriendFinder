@@ -52,9 +52,11 @@
                 <h4>Question List</h4>
             </div>
             <div class="card-body">
-                <ul id="questionList" class="list-group">
+                <div id="questionList"></div>
+
+                <!-- <ul id="questionList" class="list-group">
                 </ul>
-                <ul id="answerList" class="list-group"></ul>
+                <ul id="answerList" class="list-group"></ul> -->
             </div>
         </div>
 
@@ -102,49 +104,45 @@
 
     <script type="text/javascript">
 
+        var card = $('#questionList')
+        console.log(card)
+
         var questionItem = $("<li class='list-group-item mt-4'>");
-        var answerItem =  $("<li id='answerList' class='list-group-item mt-4'>");
+        var answerItem = $("<li id='answerList' class='list-group-item mt-4'>");
 
-        function runQuestionQuery() {
-            $.ajax({ url: '/api/questions', method: 'GET' }).then(function (questionArray) {
+            runQuestionQuery();
 
-                for (var i = 0; i < questionArray[0].length; i++) {
-                    var questionList = $('#questionList');
+      
+            // answers = [],
 
-                    questionItem.append(
-                        $("<h2>").text("Question #" + (i + 1)),
-                        $("<hr>"),
-                        $("<h2>").text(questionArray[0][i]),
-                    )
-                    questionList.append(questionItem)
-                }
-
-
-                function runAnswerQuery() {
-                    for (var i = 0; i < questionArray[1].length; i++) {
-                        // var answerList = $('#answerList')
-
-                        questionItem.append(
-                            $('<input type="radio" name="rbnNumber" value=' + questionArray[1][i] + '/>')
+            function runQuestionQuery() {
+                $.ajax({ url: '/api/questions', method: 'GET' }).then(function (questionArray) {
+                    for (var i = 0; i < questionArray[0].length; i++) {
+                        // var questionList = $('#questionList');
+                        card.append(
+                            $("<h2>").text("Question #" + (i + 1)),
+                            $("<hr>"),
+                            $("<h2>").text(questionArray[0][i]),
                         )
-                        answerList.append(questionItem)
+                        
+
+                        for (var j = 0; j < questionArray[1].length; j++) {
+                            card.append("<input type='radio' name='question-" + j +
+                                "' value='" + questionArray[1][j] + "''>" + questionArray[1][j]);
+                                console.log()
+                        }
+                        // questionList.append(questionItem);
                     }
-                    // console.log(questionItem)
-                }
-                console.log(runAnswerQuery());
-                // console.log(questionArray[1])
 
 
-            })
-
-
+                })
+           
         }
-
-
+    
 
 
         //run queries
-        runQuestionQuery();
+        // runQuestionQuery();
 
 
         // Get Radio Button value using jQuery
