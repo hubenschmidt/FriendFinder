@@ -19,6 +19,7 @@ module.exports = function(app){
 app.post('/api/friends', function(req, res){
     //post request logic goes here
     console.log('this works')
+    console.log(friendsData)
 
 })
 }
