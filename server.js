@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //router
 require('./app/routes/apiRoutes')(app);
-// require('./app/routes/htmlRoutes')(app);
+require('./app/routes/htmlRoutes')(app);
 
 //listener
 app.listen(PORT, function(){
