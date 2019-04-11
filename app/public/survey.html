@@ -106,19 +106,13 @@
 
         var card = $('#questionList')
         console.log(card)
-
-        var questionItem = $("<li class='list-group-item mt-4'>");
-        var answerItem = $("<li id='answerList' class='list-group-item mt-4'>");
-
-            runQuestionQuery();
-
       
-            // answers = [],
+         var answers = [];
 
             function runQuestionQuery() {
                 $.ajax({ url: '/api/questions', method: 'GET' }).then(function (questionArray) {
                     for (var i = 0; i < questionArray[0].length; i++) {
-                        // var questionList = $('#questionList');
+    
                         card.append(
                             $("<h2>").text("Question #" + (i + 1)),
                             $("<hr>"),
@@ -127,33 +121,21 @@
                         
 
                         for (var j = 0; j < questionArray[1].length; j++) {
-                            card.append("<input type='radio' name='question-" + j +
-                                "' value='" + questionArray[1][j] + "''>" + questionArray[1][j]);
+                            card.append("<input type='radio' name='question-" + i +
+                                "' value='" + questionArray[1][j] + "''>" 
+                                + questionArray[1][j] + ' '
+                                );
                                 console.log()
                         }
-                        // questionList.append(questionItem);
+                 
                     }
-
 
                 })
            
         }
+
+        runQuestionQuery();
     
-
-
-        //run queries
-        // runQuestionQuery();
-
-
-        // Get Radio Button value using jQuery
-        // http://www.jquerybyexample.net/2012/02/get-radio-button-value-using-jquery.html
-
-        $(document).ready(function () {
-            $('#btnGetValue').click(function () {
-                var selValue = $('input[name=rbnNumber]:checked').val();
-                $('p').html('<br/>Selected Radio Button Value is : <b>' + selValue + '</b>');
-            });
-        });
 
         // Capture the form inputs
         $("#submit").on("click", function (event) {
