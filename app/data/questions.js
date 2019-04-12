@@ -1,27 +1,24 @@
 var questionArray = [
-        'Your mind is always buzzing with unexplored ideas and plans.',
+        'You consistently make time in your life to listen to music.',
 
-        'Generally speaking, you rely more on your experience than your imagination.',
+        'Generally speaking, you rely more on listening to familiar songs/albums/artists/genres than exploring unfamiliar ones.',
 
-        'You find it easy to stay relaxed and focused even when there is some pressure.',
+        'You find it easy to stay relaxed and focused even when there is music playing.',
 
-        'You rarely do something just out of sheer curiosity.',
+        'You prefer the convenience of streaming music over the sound quality of vinyl records',
 
-        'People can rarely upset you.',
+        'You rarely visit record stores.',
 
-        'It is often difficult for you to relate to other people’s feelings.',
+        'It is difficult for you to listen to songs in the Top 40.',
 
-        'In a discussion, truth should be more important than people’s sensitivities.',
+        'You attend events primarily because of the headlining DJ.',
 
-        'You rarely get carried away by fantasies and ideas.',
+        'You consistently ask for guest list before attending events.',
 
-        'You think that everyone’s views should be respected regardless of whether they are supported by facts or not.',
+        '\"Undeground\" is a term you associate with the subway',
 
-        'You feel more energetic after spending time with a group of people.',
-
+        'You are able to name five Miles Davis albums (select the corresponding number).',
 ]
-
-
 
 module.exports = questionArray
 
