@@ -21,12 +21,9 @@ var questionArray = [
 
 ]
 
-// module.exports = questionArray
-// console.log(questionArray)
 
-var valueArray = [ 1, 2, 3, 4, 5 ]
 
-module.exports = [questionArray, valueArray]
-// console.log(module.exports)
+module.exports = questionArray
+
 
 
