@@ -50,9 +50,10 @@ module.exports = function (app) {
                 match.friendDifference = totalDifference;
             }
         }
-
         //push user data to friends database after performing check
             friendsData.push(user);
+
+      res.json(match);
     })
 
     function difference(arr1, arr2) {
