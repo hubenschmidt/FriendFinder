@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    box-sizing: border-box; */
+    /* color: white; */
+    min-height: 100%;
+  }
+
+.jumbotron{
+    background-color: #5c006a;
+    border-color: #dd00ff;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.btn-primary{
+    background-color:#41004b;
+    color:rgb(217, 235, 18);
+}
+
+h1, h2, h3{
+    color:rgb(217, 235, 18);
+}
+
+h4,h5{
+    color: white;
+}

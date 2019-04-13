@@ -11,6 +11,10 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+
+//serve static css from public folder
+app.use(express.static('app/public'))
+
 //router
 require('./app/routes/apiRoutes')(app);
 require('./app/routes/htmlRoutes')(app);
