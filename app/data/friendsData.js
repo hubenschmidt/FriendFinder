@@ -2,19 +2,22 @@
 
 var friendArray = [
     {
-        name: 'Ray',
-        photo: 'http://s3.amazonaws.com/quietus_production/images/articles/11495/Ray_2_1361835075_crop_550x556.jpg',
+        name: 'Prince',
+        photo: 'https://i0.wp.com/media.boingboing.net/wp-content/uploads/2018/01/PRINCE.jpg?w=1200&ssl=1',
         scores: [
             5,
             1,
             4,
-            4,
+            1,
+            5,
+            3,
+            5,
             5,
             1,
-            2,
             5,
-            4,
-            1
+            5,
+            5,
+            5
         ]
     }
 
