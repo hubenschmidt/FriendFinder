@@ -1,4 +1,4 @@
-## TasteMaker // 
+# TasteMaker // 
 Survey and friend matching application using Express.Js and Node.Js
 ___________________________________________________________
 
@@ -8,7 +8,7 @@ This full-stack application will take in users' surveys, then compare their answ
 
 View the finished product on Heroku.
 
-# Installation To install the application follow the instructions below:
+### Installation To install the application follow the instructions below:
 
 git clone cd tastemaker npm install
 
