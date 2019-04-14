@@ -1,26 +1,40 @@
 body{
     
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    /* color: white; */
+    color: #00fffb;
     min-height: 100%;
   }
 
+  a {
+    color: #00fffb;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
 .jumbotron{
-    background-color: #5c006a;
-    border-color: #dd00ff;
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+
+    border-color: white;
     border-style:solid;
     border-width: 1px;
 }
 
 .btn-primary{
-    background-color:#41004b;
-    color:rgb(217, 235, 18);
+   
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-blend-mode: screen;
+    border-color: white;
+    border-style:solid;
+    border-width: 1px;
+    color: white;
+    
 }
 
-h1, h2, h3{
-    color:rgb(217, 235, 18);
+h1, h3{
+    color:rgb(242, 255, 0);
 }
 
-h4,h5{
+h2, h4,h5{
     color: white;
 }

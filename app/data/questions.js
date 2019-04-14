@@ -5,7 +5,7 @@ var questionArray = [
 
         'You find it easy to stay relaxed and focused even when there is music playing.',
 
-        'You prefer the convenience of streaming music over the sound quality of vinyl records',
+        'You prefer the convenience of streaming music over the sound quality of vinyl records.',
 
         'You visit record stores regularly.',
 
