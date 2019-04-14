@@ -2,8 +2,8 @@
 
 var friendArray = [
     {
-        name: 'Pat',
-        photo: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg',
+        name: 'Ray',
+        photo: 'http://s3.amazonaws.com/quietus_production/images/articles/11495/Ray_2_1361835075_crop_550x556.jpg',
         scores: [
             5,
             1,
