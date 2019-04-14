@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-//serve static css from public folder
+//serve static css file from public folder
 app.use(express.static('app/public'))
 
 //router
