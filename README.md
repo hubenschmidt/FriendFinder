@@ -1,4 +1,4 @@
-# TasteMaker // 
+# TasteMaker
 Survey and friend matching application using Express.Js and Node.Js
 ___________________________________________________________
 
