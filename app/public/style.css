@@ -29,6 +29,12 @@ body{
     
 }
 
+.modal-content {
+   
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+ 
+}
+
 h1, h3{
     color:rgb(242, 255, 0);
 }
