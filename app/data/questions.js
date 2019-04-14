@@ -7,17 +7,23 @@ var questionArray = [
 
         'You prefer the convenience of streaming music over the sound quality of vinyl records',
 
-        'You rarely visit record stores.',
+        'You visit record stores regularly.',
 
         'It is difficult for you to listen to songs in the Top 40.',
 
-        'You attend events primarily because of the headlining DJ.',
+        'You attend events primarily because of the headlining act.',
 
-        'You consistently ask for guest list before attending events.',
+        'You have traveled outside of your home city to attend a live music event.',
 
-        '\"Undeground\" is a term you associate with the subway',
+        '\"Underground\" is an adjective you most readily associate with the subway.',
 
         'You are able to name five Miles Davis albums (select the corresponding number).',
+
+        'You are able to name five classical music composers (select the corresponding number).',
+
+        'You have read at least five books on music, musicology, or artist biographies (select the corresponding number).',
+
+        'You have purchased at least five records in the last month (select the corresponding number).'
 ]
 
 module.exports = questionArray
