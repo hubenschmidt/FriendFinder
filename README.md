@@ -6,7 +6,7 @@ The TasteMaker application is an app for making friends based on music taste. Th
 
 This full-stack application will take in users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best match.
 
-View the finished product on Heroku: https://whispering-fortress-56292.herokuapp.com/survey
+View the finished product on Heroku: https://whispering-fortress-56292.herokuapp.com/
 
 ### Installation To install the application follow the instructions below:
 
